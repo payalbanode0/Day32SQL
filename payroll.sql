@@ -1,7 +1,6 @@
 use payrollservices
 
 
-
 ALTER TABLE employee_payroll
 ADD Phone_Number VarChar(12)
 Go
