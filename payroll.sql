@@ -1,17 +1,21 @@
 use payrollservices
 
-
 ALTER TABLE employee_payroll
-ADD Phone_Number VarChar(12)
+ADD Basic_Pay Money
 Go
 ALTER TABLE employee_payroll
-ADD departmen varchar(20)
+ADD Deductions Money
 Go
 ALTER TABLE employee_payroll
-ADD emp_address varchar(20)
+ADD Taxable_Pay Money
+Go
+ALTER TABLE employee_payroll
+ADD Income_Tax Money
+Go
+ALTER TABLE employee_payroll
+ADD Net_Pay Money
 Go
 
 select *
 from employee_payroll
 Go
-
