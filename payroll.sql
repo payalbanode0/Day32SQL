@@ -1,21 +1,18 @@
 use payrollservices
 
-ALTER TABLE employee_payroll
-ADD Basic_Pay Money
+Insert into employee_payroll 
+(Name,StartDate,Gender,Phone_Number,department,emp_address,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay)
+values ('Terisa','2022-04-01','F',9090898977,'Sales','india',50000,2000,48000,3000,45000)
 Go
-ALTER TABLE employee_payroll
-ADD Deductions Money
-Go
-ALTER TABLE employee_payroll
-ADD Taxable_Pay Money
-Go
-ALTER TABLE employee_payroll
-ADD Income_Tax Money
-Go
-ALTER TABLE employee_payroll
-ADD Net_Pay Money
+Insert into employee_payroll 
+(Name,StartDate,Gender,Phone_Number,department,emp_address,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay)
+values ('Terisa','2020-01-01','F',8990084977,'Marketing','india',80000,2000,78000,3000,75000)
 Go
 
 select *
 from employee_payroll
 Go
+
+
+
+
